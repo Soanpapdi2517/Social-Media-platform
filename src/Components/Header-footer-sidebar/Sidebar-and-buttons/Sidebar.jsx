@@ -9,7 +9,7 @@ const SideBar = ({ selectedTab, setSelectedTab}) => {
     <div >
       <div
         className="d-flex flex-column flex-shrink-0 p-3 text-bg-dark fs-5 align-items-stretch fixed-top h-100"
-        style={{ width: "18%"}}
+        style={{ width: "280px"}}
       >
         <a
           href="/"
@@ -23,7 +23,7 @@ const SideBar = ({ selectedTab, setSelectedTab}) => {
         <hr />
         <ul className="nav nav-pills flex-column mb-auto">
           <li
-            className="nav-item d-flex align-items-stretch"
+            className="nav-item"
             onClick={() => {
               console.log("Clicked");
               setSelectedTab("Home");
