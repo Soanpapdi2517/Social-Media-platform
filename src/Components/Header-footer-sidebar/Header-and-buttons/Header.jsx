@@ -2,8 +2,13 @@ import { AiFillHome } from "react-icons/ai";
 import { TbMessages } from "react-icons/tb";
 import { FaUserFriends } from "react-icons/fa";
 import { LuActivity } from "react-icons/lu";
+import { AiOutlineMenu } from "react-icons/ai";
 
 const Header = ({ selectedTab, setSelectedTab}) => {
+  <button className="btn btn-dark d-md-none"
+    onClick={() => setIsSidebarVisible(!isSidebarVisible)}>
+<AiOutlineMenu />
+    </button>
   return (
     <header className="p-3 text-bg-dark header">
       <div className="container">
@@ -23,7 +28,7 @@ const Header = ({ selectedTab, setSelectedTab}) => {
             </svg>
           </a>
 
-          <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <ul className="col-12 col-lg-auto mb-2 justify-content-center mb-md-0 ps-8 nav-container">
             <li onClick={() => setSelectedTab("Home")}>
               <a
                 href="#"
@@ -67,7 +72,7 @@ const Header = ({ selectedTab, setSelectedTab}) => {
           </ul>
 
           <form
-            className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"
+            className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 Search"
             role="search"
           >
             <input
@@ -78,7 +83,7 @@ const Header = ({ selectedTab, setSelectedTab}) => {
             />
           </form>
 
-          <div className="text-end">
+          <div className="text-end login-signup Buttons">
             <button
               type="button"
               className={`btn btn-outline-light me-2 `}
