@@ -13,6 +13,7 @@ import Signup from "./Components/Header-footer-sidebar/Header-and-buttons/Login-
 import MessageList from "./Components/Header-footer-sidebar/Header-and-buttons/Messages/MessagesList";
 import RequestContainer from "./Components/Header-footer-sidebar/Header-and-buttons/FriendReq/requestContainer";
 import NotificationList from "./Components/Header-footer-sidebar/Sidebar-and-buttons/Notification/NotificationList";
+import Activity from "./Components/Header-footer-sidebar/Header-and-buttons/Activity/Activity";
 function App() {
   const [selectedTab, setSelectedTab] = useState("Home");
   return (
@@ -41,6 +42,8 @@ function App() {
           <MessageList></MessageList>
         ) : selectedTab === "Friends" ? (
           <RequestContainer></RequestContainer>
+        ) : selectedTab === "Activity" ? (
+          <Activity></Activity>
         ) : selectedTab === "Login" ? (
           <Login></Login>
         ) : (
