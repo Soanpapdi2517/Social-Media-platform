@@ -11,6 +11,8 @@ const Header = ({ selectedTab, setSelectedTab }) => {
   const toggleHeaderVisibility = () => {
     if (headerRef.current) {
       headerRef.current.classList.toggle("hidden");
+      headerRef.current.classList.toggle("d-none");
+
     }
   };
 

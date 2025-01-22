@@ -1,6 +1,6 @@
 const Activity = () => {
   return (
-    <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4 activity">
       <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-2 pb-1 mb-1 border-bottom activty">
         <h1 className="h2">Your Activity</h1>
         <div className="btn-toolbar mb-2 mb-md-0">
