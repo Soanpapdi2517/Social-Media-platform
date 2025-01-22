@@ -2,42 +2,42 @@ const Signup = () => {
   return (
     <center className="SignupPage">
         <form>
-          <h1 class="h3 mb-3 fw-semibold fs-2">Please sign up</h1>
+          <h1 className="h3 mb-3 fw-semibold fs-2">Please sign up</h1>
 
-          <div class="form-floating">
+          <div className="form-floating">
             <input
               type="email"
-              class="form-control"
+              className="form-control"
               id="floatingInput"
               placeholder="name@example.com"
             />
-            <label for="floatingInput">Email address</label>
+            <label htmlFor="floatingInput">Email address</label>
           </div>
-          <div class="form-floating">
+          <div className="form-floating">
             <input
               type="password"
-              class="form-control"
+              className="form-control"
               id="floatingPassword"
               placeholder="Password"
             />
-            <label for="floatingPassword">Password</label>
+            <label htmlFor="floatingPassword">Password</label>
           </div>
 
-          <div class="form-check text-start my-3">
+          <div className="form-check text-start my-3">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="checkbox"
               value="remember-me"
               id="flexCheckDefault"
             />
-            <label class="form-check-label" for="flexCheckDefault">
+            <label className="form-check-label" htmlFor="flexCheckDefault">
               Remember me
             </label>
           </div>
-          <button class="btn btn-primary w-100 py-2" type="submit">
+          <button className="btn btn-primary w-100 py-2" type="submit">
             Sign in
           </button>
-          <p class="mt-5 mb-3 text-body-secondary">© 2025 Social Media, Inc</p>
+          <p className="mt-5 mb-3 text-body-secondary">© 2025 Social Media, Inc</p>
         </form>
         </center>
   );

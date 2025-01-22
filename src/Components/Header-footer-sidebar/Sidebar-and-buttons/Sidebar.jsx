@@ -35,7 +35,6 @@ const SideBar = ({ selectedTab, setSelectedTab }) => {
           <li
             className="nav-item"
             onClick={() => {
-              console.log("Clicked");
               setSelectedTab("Home");
             }}
           >
@@ -54,7 +53,6 @@ const SideBar = ({ selectedTab, setSelectedTab }) => {
           </li>
           <li
             onClick={() => {
-              console.log("Clicked");
               setSelectedTab("Explore");
             }}
           >
@@ -72,7 +70,6 @@ const SideBar = ({ selectedTab, setSelectedTab }) => {
           </li>
           <li
             onClick={() => {
-              console.log("Clicked");
               setSelectedTab("Create");
             }}
           >
@@ -90,7 +87,6 @@ const SideBar = ({ selectedTab, setSelectedTab }) => {
           </li>
           <li
             onClick={() => {
-              console.log("Clicked");
               setSelectedTab("Notification");
             }}
           >
@@ -108,7 +104,6 @@ const SideBar = ({ selectedTab, setSelectedTab }) => {
           </li>
           <li
             onClick={() => {
-              console.log("Clicked");
               setSelectedTab("Settings");
             }}
           >

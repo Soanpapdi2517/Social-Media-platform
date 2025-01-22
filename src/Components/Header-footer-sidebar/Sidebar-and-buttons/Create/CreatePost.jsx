@@ -4,7 +4,7 @@ const CreatePost = () => {
   return (
     <form className="post-Maker">
       <div className="mb-3">
-        <label for="exampleFormControlTextarea1" className="form-label"></label>
+        <label htmlFor="exampleFormControlTextarea1" className="form-label"></label>
         <textarea
           className="form-control"
           id="exampleFormControlTextarea1"
