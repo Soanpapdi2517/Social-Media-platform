@@ -11,7 +11,7 @@ const SideBar = ({ selectedTab, setSelectedTab }) => {
   return (
     <>
     {/* sideBar button for mobile web veiw */}
-    <button className="btn btn-dark d-md-none d-none"
+    <button className="btn btn-dark d-md-none d-none "
     onClick={() => setIsSidebarVisible(!isSidebarVisible)}>
 <AiOutlineMenu />
     </button>
