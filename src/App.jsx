@@ -13,45 +13,45 @@ import Signup from "./Components/Header-footer-sidebar/Header-and-buttons/Login-
 import MessageList from "./Components/Header-footer-sidebar/Header-and-buttons/Messages/MessagesList";
 import RequestContainer from "./Components/Header-footer-sidebar/Header-and-buttons/FriendReq/requestContainer";
 import NotificationList from "./Components/Header-footer-sidebar/Sidebar-and-buttons/Notification/NotificationList";
-import Activity from "./Components/Header-footer-sidebar/Header-and-buttons/Activity/Activity";
+import PostListProvider from "./Components/store/postList-store";
 function App() {
   const [selectedTab, setSelectedTab] = useState("Home");
   return (
-    <div className="app-container">
-      <SideBar
-        selectedTab={selectedTab}
-        setSelectedTab={setSelectedTab}
-        z
-      ></SideBar>
-      <div className="app-content">
-        <Header
+    <PostListProvider>
+      <div className="app-container">
+        <SideBar
           selectedTab={selectedTab}
           setSelectedTab={setSelectedTab}
-        ></Header>
-        {selectedTab === "Home" ? (
-          <PostList></PostList>
-        ) : selectedTab === "Create" ? (
-          <CreatePost></CreatePost>
-        ) : selectedTab === "Explore" ? (
-          <Explore></Explore>
-        ) : selectedTab === "Notification" ? (
-          <NotificationList></NotificationList>
-        ) : selectedTab === "Settings" ? (
-          <Settings></Settings>
-        ) : selectedTab === "Messages" ? (
-          <MessageList></MessageList>
-        ) : selectedTab === "Friends" ? (
-          <RequestContainer></RequestContainer>
-        ) : selectedTab === "Activity" ? (
-          <Activity></Activity>
-        ) : selectedTab === "Login" ? (
-          <Login></Login>
-        ) : (
-          <Signup></Signup>
-        )}
-        <Footer></Footer>
+          z
+        ></SideBar>
+        <div className="app-content">
+          <Header
+            selectedTab={selectedTab}
+            setSelectedTab={setSelectedTab}
+          ></Header>
+          {selectedTab === "Home" ? (
+            <PostList></PostList>
+          ) : selectedTab === "Create" ? (
+            <CreatePost></CreatePost>
+          ) : selectedTab === "Explore" ? (
+            <Explore></Explore>
+          ) : selectedTab === "Notification" ? (
+            <NotificationList></NotificationList>
+          ) : selectedTab === "Settings" ? (
+            <Settings></Settings>
+          ) : selectedTab === "Messages" ? (
+            <MessageList></MessageList>
+          ) : selectedTab === "Friends" ? (
+            <RequestContainer></RequestContainer>
+          ) : selectedTab === "Login" ? (
+            <Login></Login>
+          ) : (
+            <Signup></Signup>
+          )}
+          <Footer></Footer>
+        </div>
       </div>
-    </div>
+    </PostListProvider>
   );
 }
 

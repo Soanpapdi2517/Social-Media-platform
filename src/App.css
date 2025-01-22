@@ -373,8 +373,8 @@
         flex-wrap: wrap;
         margin-bottom: 0;
         list-style: none;
-        padding-right: 10%;
-        padding-left: 12%;
+        padding-right: 8%;
+        padding-left: 24%;
     }
     .post-Maker{
         margin-left: 19%;
@@ -446,8 +446,8 @@
         flex-wrap: wrap;
         margin-bottom: 0;
         list-style: none;
-        padding-right: 0%;
-        padding-left: 16%;
+        padding-right: 8%;
+        padding-left: 24%;
     }
     .header{
         display: flex;
@@ -479,4 +479,17 @@
         margin-right: 1%;
     }
         
+}
+.hashtags{
+    margin: 1%;
+}
+.ProfileImagesPost{
+    width: 50px; /* Set equal width */
+  height: 50px; /* Set equal height */
+  object-fit: cover; /* Ensure image fills the circle */
+  border-radius: 50%; /* Make the image circular */
+  border: 2px solid #ddd; 
+}
+.CreateInputs{
+    border-radius: 4%;
 }
