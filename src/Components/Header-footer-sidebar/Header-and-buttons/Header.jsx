@@ -1,9 +1,10 @@
 import { AiFillHome } from "react-icons/ai";
 import { TbMessages } from "react-icons/tb";
 import { FaUserFriends } from "react-icons/fa";
-import { LuActivity } from "react-icons/lu";
 import { AiOutlineMenu } from "react-icons/ai";
 import { useRef } from "react";
+import { FiPlusCircle } from "react-icons/fi";
+import { IoIosNotifications } from "react-icons/io";
 
 const Header = ({ selectedTab, setSelectedTab }) => {
   const headerRef = useRef(null);
@@ -38,17 +39,27 @@ const Header = ({ selectedTab, setSelectedTab }) => {
               <li onClick={() => setSelectedTab("Home")}>
                 <a
                   href="#"
-                  className={`nav-link px-5 fs-4 ${
+                  className={`nav-link px-4 fs-4 ${
                     selectedTab === "Home" ? "text-Secondary" : "text-white"
                   }`}
                 >
                   <AiFillHome />
                 </a>
               </li>
+              <li onClick={() => setSelectedTab("Create")}>
+                <a
+                  href="#"
+                  className={`nav-link px-4 fs-4 ${
+                    selectedTab === "Create" ? "text-Secondary" : "text-white"
+                  }`}
+                >
+                  <FiPlusCircle />
+                </a>
+              </li>
               <li onClick={() => setSelectedTab("Messages")}>
                 <a
                   href="#"
-                  className={`nav-link px-5 fs-4 ${
+                  className={`nav-link px-4 fs-4 ${
                     selectedTab === "Messages" ? "text-Secondary" : "text-white"
                   }`}
                 >
@@ -58,21 +69,21 @@ const Header = ({ selectedTab, setSelectedTab }) => {
               <li onClick={() => setSelectedTab("Friends")}>
                 <a
                   href="#"
-                  className={`nav-link px-5 fs-4 ${
+                  className={`nav-link px-4 fs-4 ${
                     selectedTab === "Friends" ? "text-Secondary" : "text-white"
                   }`}
                 >
                   <FaUserFriends />
                 </a>
               </li>
-              <li onClick={() => setSelectedTab("Activity")}>
+              <li onClick={() => setSelectedTab("Notification")}>
                 <a
                   href="#"
-                  className={`nav-link px-5 fs-4 ${
-                    selectedTab === "Activity" ? "text-Secondary" : "text-white"
+                  className={`nav-link px-4 fs-4 ${
+                    selectedTab === "Notification" ? "text-Secondary" : "text-white"
                   }`}
                 >
-                  <LuActivity />
+                   <IoIosNotifications/>
                 </a>
               </li>
             </ul>
