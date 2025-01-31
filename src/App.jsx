@@ -11,7 +11,7 @@ import Settings from "./Components/Header-footer-sidebar//Sidebar-and-buttons/Se
 import Login from "./Components/Header-footer-sidebar/Header-and-buttons/Login-SignUp/Login";
 import Signup from "./Components/Header-footer-sidebar/Header-and-buttons/Login-SignUp/Signup";
 import MessageList from "./Components/Header-footer-sidebar/Header-and-buttons/Messages/MessagesList";
-import RequestContainer from "./Components/Header-footer-sidebar/Header-and-buttons/FriendReq/requestContainer";
+import RequestContainer from "./Components/Header-footer-sidebar/Header-and-buttons/FriendReq/RequestContainer";
 import NotificationList from "./Components/Header-footer-sidebar/Sidebar-and-buttons/Notification/NotificationList";
 import PostListProvider from "./Components/store/postList-store";
 function App() {

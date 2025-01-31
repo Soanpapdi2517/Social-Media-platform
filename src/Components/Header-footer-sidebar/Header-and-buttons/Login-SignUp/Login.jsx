@@ -1,31 +1,26 @@
 const Login = () => {
   return (
     <form className="Loginpage">
-      <div className="mb-3">
       <h1 className="h3 mb-3 fw-semibold fs-2">Please Login</h1>
-        <label htmlFor="exampleInputEmail1" className="form-label">
-          Email address
-        </label>
+      <div className="form-floating mb-3">
         <input
           type="email"
           className="form-control"
-          id="exampleInputEmail1"
-          aria-describedby="emailHelp"
+          id="floatingInput"
+          placeholder="name@example.com"
         />
-        <div id="emailHelp" className="form-text">
-          We'll never share your email with anyone else.
-        </div>
+        <label htmlFor="floatingInput">Email address</label>
       </div>
-      <div className="mb-3">
-        <label htmlFor="exampleInputPassword1" className="form-label">
-          Password
-        </label>
+      <div className="form-floating">
         <input
           type="password"
           className="form-control"
-          id="exampleInputPassword1"
+          id="floatingPassword"
+          placeholder="Password"
         />
+        <label htmlFor="floatingPassword">Password</label>
       </div>
+
       <div className="mb-3 form-check">
         <input
           type="checkbox"

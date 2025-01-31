@@ -2,7 +2,7 @@ import FriendReq from "./FriendReq";
 
 const RequestContainer = () => {
   return (
-    <div className="FriendReq-Container">
+    <div className="FriendReq-List">
       <FriendReq></FriendReq>
       <FriendReq></FriendReq>
       <FriendReq></FriendReq>
