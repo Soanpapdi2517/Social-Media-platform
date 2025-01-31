@@ -19,7 +19,7 @@ const CreatePost = () => {
     );
     postUsername.current.value = "";
     postImage.current.value = "";
-    postBody.current.valueBody = "";
+    postBody.current.value = "";
     postHashtag.current.value = [""];
   };
   return (
